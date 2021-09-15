@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Send Mail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css Bootstrap -->
+    <link href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="personalizado.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="conteiner">
+
+            <div class="pestaña">
+
+                <h2 class="titulo">Enviar Nuevo Email</h2>
+
+            </div>
+
+            <div class="elementos">
+
+                <form id=enviar-email>
+
+                    <!-- Formulario para emai -->
+                    <label for="email" class="lbl para">Para:</label>
+
+                    <p class="p mail">
+                        <input type="email" name="email" placeholder="ejemplo@ejemplo.com" class="email" id="mail"
+                            size="38" />
+
+                    </p>
+
+                    <!-- Formulario para asutno -->
+                    <label for="text" class="lbl asunto">Asunto:</label>
+
+                    <p class="p asunto-p">
+                        <input type="text" name="text" class="input-asunto" id="affair" size="38" />
+                    </p>
+
+                    <!-- Formulario para Escribir el mensaje  -->
+                    <label for="text" class="lbl msj">Mensaje::</label>
+
+                    <p class="p mensaje">
+                        <textarea name="text" value="" class="txtArea" id="mesage" style="resize: none;" cols="40"
+                            rows="5" class="textarea"></textarea>
+                    </p>
+
+                </form>
+
+            </div>
+
+            <!-- div para spinner -->
+            <div id="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+
+
+            <div class="botones">
+
+                <button href="#" class="enviar icon-send" id="send" type="submit">enviar<img src="images/send.png" alt="Enviar"></button>
+
+                <button href="#" class="eliminar icon-delete" id="delete" type="submit">Eliminar<img src="images/delete.png"
+                        alt="Delete"></button>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </header>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
